@@ -53,7 +53,7 @@ https://learn.freecodecamp.org/responsive-web-design/basic-html-and-html5/nest-m
 			}
 
 			p {
-				font-size: 20px;
+				font-size: 10px;
 				font-family: arial;
 			}
 
@@ -89,108 +89,24 @@ https://learn.freecodecamp.org/responsive-web-design/basic-html-and-html5/nest-m
  				Click here for projec <a href="https://github.com/eugenetedkim" target="_blank">GitHub</a> and my <a href="https://www.linkedin.com/in/eugenetedkim/" target="_blank">LinkedIn</a>.
  			</p>
   
-			<a href="https://eugenetedkim.github.io/station.jpeg" target="_blank"><img class="smaller-image" src="https://eugenetedkim.github.io/station.jpeg" alt="My work station"></a>
+			<a href="https://eugenetedkim.github.io/station.jpeg"><img class="smaller-image" src="https://eugenetedkim.github.io/station.jpeg" alt="My work station"></a>
  
-		<p><a href="algorithm_analysis.html">Algorithm Analysis</a>
-		<p><a href="biology.html">Biology</a>
-		<p><a href="achitecture.html" target="_blank">Contemporary Computer Architecture</a></p>
-		<p><a href="c++.html" target="_blank">C++</a></p>
-		<p><a href="calculus.html" target="_blank">Calculus</a></p>
-		<p><a href="combinatorics.html" target="_blank">Combinatorics</a></p>
-		<p><a href="compilers.html" target="_blank">Compilers</a></p>
-		<p><a href="data_structures.html" target="_blank">Data Structures</a></p>
-		<p><a href="digital_logic.html" target="_blank">Digital Logic</a></p>
-		<p><a href="language_automata.html" target="_blank">Formal Languages and Automata</a></p>
-		<p><a href="machine_organization.html" target="_blank">Machine Organization</a></p>
-		<p><a href="operating_systems.html" target="_blank">Operating Systems</a></p>
-		<p><a href="physics.html" target="_blank">Physics</a></p>
-		<p><a href="programming_languages.html" target="_blank">Programming Languages</a></p>
-		<p><a href="stats.html" target="_blank">Statistics</a></p>
+			<p><a href="algorithm_analysis.html">Algorithm Analysis</a>
+			<p><a href="biology.html">Biology</a>
+			<p><a href="achitecture.html">Contemporary Computer Architecture</a></p>
+			<p><a href="c++.html">C++</a></p>
+			<p><a href="calculus.html">Calculus</a></p>
+			<p><a href="combinatorics.html">Combinatorics</a></p>
+			<p><a href="compilers.html">Compilers</a></p>
+			<p><a href="data_structures.html">Data Structures</a></p>
+			<p><a href="digital_logic.html">Digital Logic</a></p>
+			<p><a href="language_automata.html">Formal Languages and Automata</a></p>
+			<p><a href="machine_organization.html">Machine Organization</a></p>
+			<p><a href="operating_systems.html">Operating Systems</a></p>
+			<p><a href="physics.html">Physics</a></p>
+			<p><a href="programming_languages.html">Programming Languages</a></p>
+			<p><a href="stats.html">Statistics</a></p>
 
-			<!--This is a divison element and it is used to group content so it can be easily styled using the class or id attributes, marking a section of a document as being written in a different language (using the lang attribute), and so on or to perform certain tasks with JavaScript.-->
-			<div>
-    			<h2 class="teal-text">Works in Progress:</h2>
-    			<ol>
-      				<li>
-      					<strong>Web Development</strong><br>
-      					<ul>
-      						<li>HTML</li>
-      						<li>CSS</li>
-      						<li>JavaScript</li>
-      						<li>React</li>
-      					</ul>
-      				</li>
-      				<li>
-      					<strong>Data Structures</strong><br>
-      					<ul>
-      						<li>Vector ADT</li>
-      					</ul>
-      				</li>
-      				<li>
-      				<strong>LinkedIn</strong><br>
-      					<ul>
-      						<li>Update About</li>
-      						<li>Update Experience</li>
-      						<li>Update Resume</li>
-      					</ul>
-      				</li>
-      				<li><strong>Resume</strong></li>
-      				<li><strong>iOS Mobile App Development</strong></li>
-      				<li><strong>Algorithm Analysis - Sort and Search algorithms</strong></li>
-      				<li><strong>.NET/C#</strong></li>
-   				</ol>
-    			<h2 class="teal-text">Top 3 things I am interested in:</h2>
-    			<ol>
-      				<strong><li>Front and Back-end Web Development</li></strong>
-      				<strong><li>Mobile App Development</li></strong>
-      				<strong><li>File Systems</li></strong>
-      				<strong><li>Applying Data Structures and Algorithms to Speed-up Time Complexity of Programs</li></strong>
-    			</ol>
-  			</div>
-
-			<!--Specifying an action attribute to the form element to submit data to a server-->
-			<form action="/url-where-you-want-to-submit-form-data">
-	
-				<!--TEXT FIELD-->
-				<!--This is a nested text field or input element of type text.-->
-				<!--A required attribute has been added so that the user can't submit the form without completing this field.-->
-				<!--A placeholder attribute is set to "Name" which is displayed in the input element before the user has inputted anything.-->
-				<input type="text" required placeholder="Name">
-
-				<!--SUBMIT BUTTON-->
-				<!--Clicking this button will send the data from your form to the URL you specified with your form's action attribute.-->
-				<!--This is a button element of type submit and "Submit" as its text.-->
-				<button type="submit">Submit</button><br>
-
-				<!--RADIO BUTTON-->
-				<!--A label element with a for attribute set to the input elements id attribute which allows assistive technologies to create a linked relationship between the label and the child input element.-->
-				<!--This label element wraps the input element so it will automatically associate the radio button input with it.-->
-				<label for="male">
-					<!--This is an input element of type radio. Also known as a "radio button" which used when you want the user to only give you one answer out of multiple options.-->
-					<!--All related radio buttons should have the same name attribute to create a radio button group. By creating a radio group, selecting any single radio button will automatically deselect the other buttons within the same group, ensuring only one answer is provided by the user.-->
-					<!--A checked attribute is used inside of the input element to set the radio button to be checked by default.-->
-					<input id="male" type="radio" name="male-female" checked>male
-				</label>
-				<label for="female">
-					<input id="female" type="radio" name="male-female">female
-				</label><br>
-
-				<!--SET OF CHECKBOXES-->
-				<!--Forms commonly use checkboxes for questions that may have more than one answer.-->
-				<!--A label element with a for attribute set to the input elements id attribute which allows assistive technologies to create a linked relationship between the label and the child input element.-->
-				<!--This label element wraps the input element so it will automatically associate the radio button input with it.-->
-				<label for="HTML">
-					<!--This is an input element of type checkbox. It is used for questions that may have more than one answer.-->
-					<!--A checked attribute is used inside of the input element to set the checkbox to be checked by default.-->
-					<input id="HTML" type="checkbox" name="knowledge" checked>HTML
-				</label><br>
-				<label for="CSS">
-					<input id="CSS" type="checkbox" name="knowledge">CSS
-				</label><br>
-				<label for="javascript">
-					<input id="javascript" type="checkbox" name="knowledge">Javascript
-				</label>
-			</form>
 		</main>
 	</body>
 </html>
