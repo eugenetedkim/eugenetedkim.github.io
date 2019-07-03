@@ -1,23 +1,15 @@
-<!--
-Creating a web form.
-Input elements are a convenient way to get input from your user.
-
-https://learn.freecodecamp.org/responsive-web-design/basic-html-and-html5/create-a-text-field
-https://learn.freecodecamp.org/responsive-web-design/basic-html-and-html5/add-placeholder-text-to-a-text-field
-https://learn.freecodecamp.org/responsive-web-design/basic-html-and-html5/create-a-form-element
-https://learn.freecodecamp.org/responsive-web-design/basic-html-and-html5/add-a-submit-button-to-a-form
-https://learn.freecodecamp.org/responsive-web-design/basic-html-and-html5/use-html5-to-require-a-field
-https://learn.freecodecamp.org/responsive-web-design/basic-html-and-html5/create-a-set-of-radio-buttons
-https://learn.freecodecamp.org/responsive-web-design/basic-html-and-html5/create-a-set-of-checkboxes
-https://learn.freecodecamp.org/responsive-web-design/basic-html-and-html5/nest-many-elements-within-a-single-div-element
--->
-
 <!DOCTYPE html>
 
 <html>
 	<head>
 		<!--Using the link tag to import a Google font called Lobster by referencing the font's URL-->
 		<link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet" type="text/css">
+
+		<link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css?family=Fugaz+One&display=swap" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
 
 		<!--
 
@@ -43,6 +35,18 @@ https://learn.freecodecamp.org/responsive-web-design/basic-html-and-html5/nest-m
 			h1 {
 				font-family: Monoton, monospace;
 			}
+		
+			CSS class used to resize images by defining the width property so that it's only 100 pixels wide.
+			.smaller-image {
+				width: 500px;
+			}
+
+			CSS class that adds a 10px, solid, green border around an HTML element. The border-radius property adds rounded corners to an HTML element.
+			.thick-green-border {
+				border-color: green;
+				border-width: 10px;
+				border-style: solid;
+			}
 
 		-->
 		<!--A style block which you can use to implement CSS classes (style multiplce elements; Reusable styles) and selectors (styles all instances of a specific element).-->
@@ -53,8 +57,8 @@ https://learn.freecodecamp.org/responsive-web-design/basic-html-and-html5/nest-m
 			}
 
 			p {
-				font-size: 12px;
-				font-family: arial;
+				font-size: 14px;
+				font-family: 'Work Sans', sans-serif;
 			}
 
 			ol {
@@ -62,19 +66,49 @@ https://learn.freecodecamp.org/responsive-web-design/basic-html-and-html5/nest-m
 			}
 
 			h1 {
-				font-family: Monoton, monospace;
+				font-family: 'Work Sans', sans-serif;
+				margin: 1px;
 			}
 
 			.smaller-image {
 				width: 500px;
 			}
 
+			.thick-teal-border {
+				border-color: teal;
+				border-width: 5px;
+				border-style: solid;
+				border-radius: 12px;
+				margin: 1px;
+			}
+
+			.darksalmon-background {
+				background-color: darksalmon;
+			}
+
+			.teal-box {
+				background-color: teal;
+				color: #fff;
+				padding: 10px;
+			}
+
+			#children {
+				background-color: darksalmon;
+				margin: 0px;
+			}
+			
+			#child {
+				margin: 0px;
+			}
+
 		</style>
 
 		<title>
-			Eugene | Portfolio
+			Eugene Kim
 		</title>
+
 	</head>
+
 	<body>
 		<!--This is one way to specify the style of an element.-->
 		<!--Syling the individual h2 element with inline CSS.-->
@@ -82,29 +116,37 @@ https://learn.freecodecamp.org/responsive-web-design/basic-html-and-html5/nest-m
 		<!--The code has been commented out because using CSS selectors instead is a better way to apply CSS and style elements.-->
 		<!--<h1 style="color: teal;">My Portfolio</h1>-->
 		<!--Class attribute with a value of 'teal-text' applied to the h1 element.-->
-		<h1 class="teal-text">Eugene's Portfolio</h1>
+		<h1>Portfolio</h1>
 
 		<main>
- 			<p>
- 				Click here for <a href="https://github.com/eugenetedkim" target="_blank">GitHub</a> and my <a href="https://www.linkedin.com/in/eugenetedkim/" target="_blank">LinkedIn</a>.
+ 			<p id="child"> 
+ 				<a href="https://github.com/eugenetedkim" target="_blank">
+ 					GitHub
+ 				</a>
+ 				<br>
+ 				<a href="https://www.linkedin.com/in/eugenetedkim/" target="_blank">
+ 					LinkedIn
+ 				</a>
  			</p>
   
-			<a href="https://eugenetedkim.github.io/station.jpeg"><img class="smaller-image" src="https://eugenetedkim.github.io/station.jpeg" alt="My work station"></a>
- 
-			<p><a href="algorithm_analysis.html">Algorithm Analysis</a>
-			<p><a href="achitecture.html">Contemporary Computer Architecture</a></p>
-			<p><a href="c++.html">C++</a></p>
-			<p><a href="calculus.html">Calculus</a></p>
-			<p><a href="combinatorics.html">Combinatorics</a></p>
-			<p><a href="compilers.html">Compilers</a></p>
-			<p><a href="data_structures.html">Data Structures</a></p>
-			<p><a href="digital_logic.html">Digital Logic</a></p>
-			<p><a href="language_automata.html">Formal Languages and Automata</a></p>
-			<p><a href="machine_organization.html">Machine Organization</a></p>
-			<p><a href="operating_systems.html">Operating Systems</a></p>
-			<p><a href="physics.html">Physics</a></p>
-			<p><a href="programming_languages.html">Programming Languages</a></p>
-			<p><a href="stats.html">Statistics</a></p>
+			<a href="https://eugenetedkim.github.io/station.jpeg"><img class="smaller-image thick-teal-border" src="https://eugenetedkim.github.io/station.jpeg" alt="My work station"></a>
+
+ 			<div id="children">
+				<p><a href="algorithm_analysis.html">Algorithm Analysis</a>
+				<p><a href="achitecture.html">Contemporary Computer Architecture</a></p>
+				<p><a href="c++.html">C++</a></p>
+				<p><a href="calculus.html">Calculus</a></p>
+				<p><a href="combinatorics.html">Combinatorics</a></p>
+				<p><a href="compilers.html">Compilers</a></p>
+				<p><a href="data_structures.html">Data Structures</a></p>
+				<p><a href="digital_logic.html">Digital Logic</a></p>
+				<p><a href="language_automata.html">Formal Languages and Automata</a></p>
+				<p><a href="machine_organization.html">Machine Organization</a></p>
+				<p><a href="operating_systems.html">Operating Systems</a></p>
+				<p><a href="physics.html">Physics</a></p>
+				<p><a href="programming_languages.html">Programming Languages</a></p>
+				<p><a href="stats.html">Statistics</a></p>
+			</div>
 
 		</main>
 	</body>
