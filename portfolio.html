@@ -71,33 +71,22 @@
 			}
 
 			.smaller-image {
-				width: 500px;
+				width: 400px;
 			}
 
-			.thick-teal-border {
-				border-color: teal;
-				border-width: 5px;
-				border-style: solid;
+			.black-border {
+				border-color: black;
+				border-width: 2px;
+				border-style: dotted;
 				border-radius: 12px;
-				margin: 1px;
-			}
-
-			.darksalmon-background {
-				background-color: darksalmon;
-			}
-
-			.teal-box {
-				background-color: teal;
-				color: #fff;
-				padding: 10px;
 			}
 
 			#children {
-				background-color: darksalmon;
-				margin: 0px;
+				font-size: 14px;
+				font-family: 'Work Sans', sans-serif;
 			}
 			
-			#child {
+			#footer {
 				margin: 0px;
 			}
 
@@ -106,20 +95,12 @@
 		<title>
 			Eugene Kim
 		</title>
-
 	</head>
 
 	<body>
-		<!--This is one way to specify the style of an element.-->
-		<!--Syling the individual h2 element with inline CSS.-->
-		<!--An inline CSS color style property has been specified in the h2 element to change the color of the text.-->
-		<!--The code has been commented out because using CSS selectors instead is a better way to apply CSS and style elements.-->
-		<!--<h1 style="color: teal;">My Portfolio</h1>-->
-		<!--Class attribute with a value of 'teal-text' applied to the h1 element.-->
-		<h1>Portfolio</h1>
-
-		<main>
- 			<p id="child"> 
+		<div id="header">
+			<h1>Portfolio</h1>
+			 <p id="child"> 
  				<a href="https://github.com/eugenetedkim" target="_blank">
  					GitHub
  				</a>
@@ -128,12 +109,14 @@
  					LinkedIn
  				</a>
  			</p>
-  
+		</div>
+
+		<main>
 			<a href="https://eugenetedkim.github.io/station.jpg">
 				<img class="smaller-image thick-teal-border" src="https://eugenetedkim.github.io/station.jpg" alt="My work station">
 			</a>
 
- 			<div id="children">
+ 			<div id="footer">
 				<p><a href="algorithm_analysis.html">Algorithm Analysis</a>
 				<p><a href="achitecture.html">Contemporary Computer Architecture</a></p>
 				<p><a href="c++.html">C++</a></p>
