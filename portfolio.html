@@ -2,66 +2,26 @@
 
 <html>
 	<head>
-		<!--Using the link tag to import a Google font called Lobster by referencing the font's URL-->
-		<link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet" type="text/css">
-
-		<link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap" rel="stylesheet">
-
-		<link href="https://fonts.googleapis.com/css?family=Fugaz+One&display=swap" rel="stylesheet">
-
-		<link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
-
-		<!--
-
-			A CSS class called teal-text. Classes are reuseable styles that can be added to HTML elements.
-			.teal-text {
-				color: teal;
-			}
-
-			An entry for p elements set to arial at 20 pixels.
-			p {
-				font-size: 20px;
-				font-family: arial (standard font);
-			}
-			
-			Setting the font-size for all ordered lists.
-			ol {
-				font-size: 20px;
-			}
-
-			Setting the font-family for all h1 elements to a non-standard, custom web, Google font called monoton.
-			font-family: FAMILY_NAME, GENERIC_NAME;
-			GENERIC_NAME is optional and is used with generic font families such as monospace, serif and sans-serif which are all CSS keywords (not case-sesitive); Telling the browser to degrade or use the specified fallback font in case the other specified font (FAMILY_NAME) is unavailable.
-			h1 {
-				font-family: Monoton, monospace;
-			}
-		
-			CSS class used to resize images by defining the width property so that it's only 100 pixels wide.
-			.smaller-image {
-				width: 500px;
-			}
-
-			CSS class that adds a 10px, solid, green border around an HTML element. The border-radius property adds rounded corners to an HTML element.
-			.thick-green-border {
-				border-color: green;
-				border-width: 10px;
-				border-style: solid;
-			}
-
-		-->
-		<!--A style block which you can use to implement CSS classes (style multiplce elements; Reusable styles) and selectors (styles all instances of a specific element).-->
+		<title>
+			Eugene Kim
+		</title>
 		<style>
+			body {
+				background-color: black;
+			}
+
 			h1 {
 				font-family: 'Work Sans', sans-serif;
+				margin-bottom: -16px;
 			}
 
 			p {
 				font-size: 12px;
 				font-family: 'Work Sans', sans-serif;
 			}
-
+			
 			.resize-station-image {
-				width: 400px;
+				width: 547.2px;
 			}
 			
 			.resize-profile-image {
@@ -70,33 +30,71 @@
 
 			.border {
 				border-color: black;
-				border-width: 1px;
-				border-style: dotted;
-				border-radius: 10px;
+				border-width: 3px;
+				border-style: solid;
+				border-radius:10px;
 			}
 
-			#header {
-				font-size: 12px;
-				font-family: 'Work Sans', sans-serif;
-
+			.WhiteSmoke-background {
+				background-color: WhiteSmoke;
 			}
 
-			#footer {
-				font-size: 12px;
-				font-family: 'Work Sans', sans-serif;
+			span + span {
+				margin-left: 5px;
 			}
+
+			.yellow-box {
+    			background-color: yellow;
+    			padding: 40px 20px 20px 40px;
+    			margin: 40px 20px 20px 40px;
+  			}
+  
+  			.red-box {
+    			background-color: crimson;
+    			color: #fff;
+    			padding: 20px;
+    			padding-top: ;
+    			padding-right: ;
+    			padding-bottom: ;
+    			padding-left: ;
+    			margin-top: ;
+    			margin-right: ;
+    			margin-bottom: ;
+    			margin-left: ;
+  			}
+
+  			.blue-box {
+    			background-color: blue;
+    			color: #fff;
+    			padding: 10.5em;
+    			padding-top: ;
+    			padding-right: ;
+    			padding-bottom: ;
+    			padding-left: ;
+    			margin-top: ;
+    			margin-right: ;
+    			margin-bottom: ;
+    			margin-left: ;
+  			}
 		</style>
-
-		<title>
-			Eugene Kim
-		</title>
-
+		<link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
 	</head>
-
 	<body>
-
-		<div id="header" class="black-border">
+		<div class="WhiteSmoke-background">
 			<h1>Portfolio</h1>
+
+			<p>
+				<span>
+					<a href="https://github.com/eugenetedkim" target="_blank">
+ 						GitHub
+ 					</a>
+ 				</span>
+ 				<span>
+ 					<a href="https://www.linkedin.com/in/eugenetedkim/" target="_blank">
+ 						LinkedIn
+ 					</a>
+ 				</span>
+ 			</p>
 
 			<p>
 				<strong>Name</strong>: Eugene Ted Kim
@@ -106,52 +104,51 @@
 				<strong>Major</strong>: Computer Science
 				<br>
 				<strong>Expected Graduation</strong>: June 2020
-				<br>
 			</p>
 
-			<img class="resize-profile-image profile-border" src="https://eugenetedkim.github.io/document.JPG" alt="Profile Picture">
-
-			 <p id="child"> 
- 				<a href="https://github.com/eugenetedkim" target="_blank">
- 					GitHub
- 				</a>
- 				<br>
- 				<a href="https://www.linkedin.com/in/eugenetedkim/" target="_blank">
- 					LinkedIn
- 				</a>
- 			</p>
-		</div>
-
-		<main>
-			<a href="https://eugenetedkim.github.io/station.jpg">
-				<img class="resize-station-image black-border" src="https://eugenetedkim.github.io/station.jpg" alt="My work station">
-			</a>
-		</main>
-
- 		<div id="footer" class="black-border">
 			<p>
-				<a href="algorithm_analysis.html">
-					Algorithm Analysis
-				</a>
-				<br>
-				<a href="data_structures.html">
-					Data Structures
-				</a>
-				<br>
-				<a href="python.html">
-					Python
-				</a>
-				<br>
-				<a href="java.html">
-					Java
-				</a>
-				<br>
-				<a href="swift.html">
-					Swift
-				</a>
+				<span>
+					<a href="algorithm_analysis.html">
+						Algorithm Analysis
+					</a>
+				</span>
+				<span>
+					<a href="data_structures.html">
+						Data Structures
+					</a>
+				</span>
+				<span>
+					<a href="python.html">
+						Python
+					</a>
+				</span>
+				<span>
+					<a href="java.html">
+						Java
+					</a>
+				</span>
+				<span>
+					<a href="swift.html">
+						Swift
+					</a>
+				</span>
 			</p>
+
+			<a href="https://eugenetedkim.github.io/document.JPG">
+				<img class="resize-profile-image border" src="https://eugenetedkim.github.io/document.JPG" alt="Profile Picture">
+			</a>
+
+			<a href="https://eugenetedkim.github.io/station.jpg">
+				<img class="resize-station-image border" src="https://eugenetedkim.github.io/station.jpg" alt="My work station">
+			</a>
 		</div>
+
+<!--
+		<div class="box yellow-box">
+  			<h5 class="box red-box">padding</h5>
+  			<h5 class="box blue-box">padding</h5>
+		</div>
+-->
 
 	</body>
-
 </html>
