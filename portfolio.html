@@ -8,7 +8,7 @@
 		<style>
 			body {
 				background-color: #c6faf1;
-				color: #FFFFFF;
+				color: gray;
 			}
 
 			h1 {
@@ -16,6 +16,10 @@
 				font-size: 50px;
 				margin-bottom: -22px;
 				text-align: center;
+			}
+
+			h2 {
+				margin-bottom: -2px;
 			}
 
 			h3 {
@@ -26,6 +30,21 @@
 			#external_links {
 				font-size: 16px;
 				font-family: 'Work Sans', sans-serif;
+				text-align: center;
+				margin-bottom: -14px;
+			}
+
+			#studies {
+				font-size: 2px;
+				font-family: 'Work Sans', sans-serif;
+				text-align: center;
+			}
+
+			#education {
+				margin: 0px 0px 0px 230px;
+			}
+
+			#pictures {
 				text-align: center;
 			}
 
@@ -71,7 +90,7 @@
   				position: relative;
   				margin: auto;
   				display: block;
-  				margin-top: 5%;
+  				margin-top: -1%;
   				width: var(--penguin-size, 300px);
   				height: var(--penguin-size, 300px);
   			}
@@ -263,8 +282,16 @@
 	</head>
 	<body>
 
-		<h1>Eugene Ted Kim</h1>
-		<h3>Chino, CA</h3>
+		<h1>Eugene Kim</h1>
+		<h3>
+			Chino, CA
+			<br>
+			<address> 
+				<a href="mailto:eugenetedkim@gmail.com">
+				eugenetedkim@gmail.com
+				</a>
+			</address>
+		</h3>
 
 		<div id="external_links">
 			<p>
@@ -281,75 +308,80 @@
 			</p>
 		</div>
 
-		<p>
-			<strong>Name</strong>: Eugene Ted Kim
-			<br>
-			<strong>School</strong>: California State University - San Bernardino
-			<br>
-			<strong>Major</strong>: Computer Science
-			<br>
-			<strong>Expected Graduation</strong>: June 2020
-		</p>
-
-		<p>
-			<span>
-				<a href="algorithm_analysis.html">
-					Algorithm Analysis
-				</a>
-			</span>
-			<span>
-				<a href="data_structures.html">
-					Data Structures
-				</a>
-			</span>
-			<span>
-				<a href="python.html">
-					Python
-				</a>
-			</span>
-			<span>
-				<a href="java.html">
-					Java
-				</a>
-			</span>
-			<span>
-				<a href="swift.html">
-					Swift
-				</a>
-			</span>
-		</p>
-
-		<a href="https://eugenetedkim.github.io/document.JPG">
-			<img class="resize-profile-image border" src="https://eugenetedkim.github.io/document.JPG" alt="Profile Picture">
-		</a>
-
-		<a href="https://eugenetedkim.github.io/station.jpg">
-			<img class="resize-station-image border" src="https://eugenetedkim.github.io/station.jpg" alt="My work station">
-		</a>
-	</div>
-	<div class="penguin">
-		<div class="penguin-bottom">
-			<div class="right-hand"></div>
-			<div class="left-hand"></div>
-			<div class="right-feet"></div>
-			<div class="left-feet"></div>
-		</div>
-		<div class="penguin-top">
-			<div class="right-cheek"></div>
-			<div class="left-cheek"></div>
-			<div class="belly"></div>
-			<div class="right-eye">
-				<div class="sparkle"></div>
-			</div>
-			<div class="left-eye">
-				<div class="sparkle"></div>
-			</div>
-			<div class="blush-right"></div>
-			<div class="blush-left"></div>
-			<div class="beak-top"></div>
-			<div class="beak-bottom"></div>
+		<div id=studies>
+			<p>
+				<span>
+					<a href="algorithm_analysis.html">
+						Algorithm Analysis
+					</a>
+				</span>
+				<span>
+					<a href="data_structures.html">
+						Data Structures
+					</a>
+				</span>
+				<span>
+					<a href="python.html">
+						Python
+					</a>
+				</span>
+				<span>
+					<a href="java.html">
+						Java
+					</a>
+				</span>
+				<span>
+					<a href="swift.html">
+						Swift
+					</a>
+				</span>
+			</p>
 		</div>
 
+		<div class="penguin">
+			<div class="penguin-bottom">
+				<div class="right-hand"></div>
+				<div class="left-hand"></div>
+				<div class="right-feet"></div>
+				<div class="left-feet"></div>
+			</div>
+			<div class="penguin-top">
+				<div class="right-cheek"></div>
+				<div class="left-cheek"></div>
+				<div class="belly"></div>
+				<div class="right-eye">
+					<div class="sparkle"></div>
+				</div>
+				<div class="left-eye">
+					<div class="sparkle"></div>
+				</div>
+				<div class="blush-right"></div>
+				<div class="blush-left"></div>
+				<div class="beak-top"></div>
+				<div class="beak-bottom"></div>
+			</div>
+		</div>
 
+		<div id=pictures>
+			<a href="https://eugenetedkim.github.io/document.JPG">
+				<img class="resize-profile-image border" src="https://eugenetedkim.github.io/document.JPG" alt="Profile Picture">
+			</a>
 
+			<a href="https://eugenetedkim.github.io/station.jpg">
+				<img class="resize-station-image border" src="https://eugenetedkim.github.io/station.jpg" alt="My work station">
+			</a>
+		</div>
+
+		<div id="education">
+			<p>
+				<h2>
+					Education
+				</h2>
+				California State University - San Bernardino
+				<br>
+				Computer Science
+				<br>
+				June 2020
+			</p>
+		</div>
 </html>
