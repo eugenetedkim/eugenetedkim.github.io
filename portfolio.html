@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 
+			<!--
+				font-weight: bold; (<strong></strong>)
+				text-decoration: underline; (<u></u>)
+				font-style: italic; (<em></em>)
+				text-decoration: line-through; (<s></s>)
+				horizontal line tag <hr> with the width of its parent element
+				background-color: rgba(45, 45, 45, 0.1);
+			-->
+
 <html>
 	<head>
 		<title>
 			Eugene Kim
 		</title>
 		<style>
+			.fullCard {
+				width: 650px;
+				border: 1px solid gray;
+				border-radius: 5px;
+				margin: 10px 10px 10px 10px;
+				padding: 4px;
+				box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+			}
+
+			.cardContent{
+				padding: 10px;
+			}
+
+			.cardText {
+				padding: 10px;
+			}
+
 			body {
 				background-color: #c6faf1;
 				color: gray;
@@ -18,33 +44,56 @@
 				text-align: center;
 			}
 
-			h2 {
+			#location {
+				font-size: 16px;
+				font-family: 'Work Sans', sans-serif;
+				text-align: center;
 				margin-bottom: -2px;
 			}
 
-			h3 {
+			#email {
+				font-size: 16px;
+				font-family: 'Work Sans', sans-serif;
 				text-align: center;
-				margin-bottom: -14px;
+				margin-bottom: -16px;
 			}
 
 			#external_links {
 				font-size: 16px;
 				font-family: 'Work Sans', sans-serif;
 				text-align: center;
-				margin-bottom: -14px;
+				margin-bottom: -2px;
+				opacity: 0.7;
+			}
+
+			.color-red {
+				color: red;
+			}
+
+			.color-gray {
+				color: gray;
+			}
+
+			}
+
+			h2 {
+				margin-bottom: -2px;
 			}
 
 			#studies {
 				font-size: 2px;
 				font-family: 'Work Sans', sans-serif;
 				text-align: center;
+				margin-top: -20px;
 			}
 
 			#education {
-				margin: 0px 0px 0px 230px;
+				margin: -20px 0px -20px 0px;
+				text-align: left;
 			}
 
 			#pictures {
+				margin: -20px 0px 0px 0px;
 				text-align: center;
 			}
 
@@ -282,106 +331,138 @@
 	</head>
 	<body>
 
-		<h1>Eugene Kim</h1>
-		<h3>
-			Chino, CA
-			<br>
-			<address> 
-				<a href="mailto:eugenetedkim@gmail.com">
-				eugenetedkim@gmail.com
-				</a>
-			</address>
-		</h3>
-
-		<div id="external_links">
-			<p>
-				<span>
-					<a href="https://github.com/eugenetedkim" target="_blank">
-						GitHub
-					</a>
-				</span>
-				<span>
-					<a href="https://www.linkedin.com/in/eugenetedkim/" target="_blank">
-						LinkedIn
-					</a>
-				</span>
-			</p>
-		</div>
-
-		<div id=studies>
-			<p>
-				<span>
-					<a href="algorithm_analysis.html">
-						Algorithm Analysis
-					</a>
-				</span>
-				<span>
-					<a href="data_structures.html">
-						Data Structures
-					</a>
-				</span>
-				<span>
-					<a href="python.html">
-						Python
-					</a>
-				</span>
-				<span>
-					<a href="java.html">
-						Java
-					</a>
-				</span>
-				<span>
-					<a href="swift.html">
-						Swift
-					</a>
-				</span>
-			</p>
-		</div>
-
-		<div class="penguin">
-			<div class="penguin-bottom">
-				<div class="right-hand"></div>
-				<div class="left-hand"></div>
-				<div class="right-feet"></div>
-				<div class="left-feet"></div>
-			</div>
-			<div class="penguin-top">
-				<div class="right-cheek"></div>
-				<div class="left-cheek"></div>
-				<div class="belly"></div>
-				<div class="right-eye">
-					<div class="sparkle"></div>
+		<div class="fullCard">
+			<div class="cardContent">
+				<div class="cardText">
+					<h1>Eugene Kim</h1>
+					<p id="location">
+						Chino, CA
+					</p>
+					<address id="email"> 
+						<a class="color-gray" href="mailto:eugenetedkim@gmail.com">
+						eugenetedkim@gmail.com
+						</a>
+					</address>
+					<div id="external_links">
+						<p>
+							<span>
+								<a class="color-gray" href="https://github.com/eugenetedkim" target="_blank">
+									<em>GitHub</em>
+								</a>
+							</span>
+							<span>
+								<a class="color-gray" href="https://www.linkedin.com/in/eugenetedkim/" target="_blank">
+									<em>LinkedIn</em>
+								</a>
+							</span>
+						</p>
+					</div>
 				</div>
-				<div class="left-eye">
-					<div class="sparkle"></div>
-				</div>
-				<div class="blush-right"></div>
-				<div class="blush-left"></div>
-				<div class="beak-top"></div>
-				<div class="beak-bottom"></div>
 			</div>
 		</div>
 
-		<div id=pictures>
-			<a href="https://eugenetedkim.github.io/document.JPG">
-				<img class="resize-profile-image border" src="https://eugenetedkim.github.io/document.JPG" alt="Profile Picture">
-			</a>
-
-			<a href="https://eugenetedkim.github.io/station.jpg">
-				<img class="resize-station-image border" src="https://eugenetedkim.github.io/station.jpg" alt="My work station">
-			</a>
+		<div class="fullCard">
+			<div class="cardContent">
+				<div class="cardText">
+					<div id=studies>
+						<p>
+							<span>
+								<a class="color-red" href="algorithm_analysis.html">
+									Algorithm Analysis
+								</a>
+							</span>
+							<span>
+								<a class="color-red" href="data_structures.html">
+									Data Structures
+								</a>
+							</span>
+							<span>
+								<a class="color-red" href="python.html">
+									Python
+								</a>
+							</span>
+							<span>
+								<a class="color-red" href="java.html">
+									Java
+								</a>
+							</span>
+							<span>
+								<a class="color-red" href="swift.html">
+									Swift
+								</a>
+							</span>
+						</p>
+					</div>
+				</div>
+			</div>
 		</div>
 
-		<div id="education">
-			<p>
-				<h2>
-					Education
-				</h2>
-				California State University - San Bernardino
-				<br>
-				Computer Science
-				<br>
-				June 2020
-			</p>
+		<div class="fullCard">
+			<div class="cardContent">
+				<div class="cardText">
+					<div class="penguin">
+						<div class="penguin-bottom">
+							<div class="right-hand"></div>
+							<div class="left-hand"></div>
+							<div class="right-feet"></div>
+							<div class="left-feet"></div>
+						</div>
+						<div class="penguin-top">
+							<div class="right-cheek"></div>
+							<div class="left-cheek"></div>
+							<div class="belly"></div>
+							<div class="right-eye">
+								<div class="sparkle"></div>
+							</div>
+							<div class="left-eye">
+								<div class="sparkle"></div>
+							</div>
+							<div class="blush-right"></div>
+							<div class="blush-left"></div>
+							<div class="beak-top"></div>
+							<div class="beak-bottom"></div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="fullCard">
+			<div class="cardContent">
+				<div class="cardText">
+					<div id=pictures>
+						<a href="https://eugenetedkim.github.io/document.JPG">
+							<img class="resize-profile-image border" src="https://eugenetedkim.github.io/document.JPG" alt="Profile Picture">
+						</a>
+
+						<a href="https://eugenetedkim.github.io/station.jpg">
+							<img class="resize-station-image border" src="https://eugenetedkim.github.io/station.jpg" alt="My work station">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="fullCard">
+			<div class="cardContent">
+				<div class="cardText">
+					<div id="education">
+						<p>
+							<h2>
+								<u>
+									Education
+								</u>
+							</h2>
+							California State University - San Bernardino
+							<br>
+							Computer Science
+							<br>
+							June 2020
+						</p>
+					</div>
+				</div>
+			</div>
 		</div>
 </html>
