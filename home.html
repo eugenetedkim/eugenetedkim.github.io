@@ -5,11 +5,8 @@
 		<title>
 			Eugene Kim | Home
 		</title>
-
 		<link href="https://fonts.googleapis.com/css?family=Sacramento&display=swap" rel="stylesheet">
-
 		<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
-
 		<style>
 			#logo {
 				width: 300px;
@@ -20,7 +17,6 @@
 				font-family: Quicksand;
 				font-size: 18px;
 				text-align: center;
-				margin-top: -12px;
 			}
 
 			span + span {
@@ -30,8 +26,6 @@
 			#profile_picture {
 				width: 600px;
 				box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-				margin-top: 18px;
-				margin-bottom: 36px;
 			}
 
 			#station_picture {
@@ -48,7 +42,6 @@
 
 			h1 {
 				font-family: Quicksand, cursive;
-				font-size: 28px;
 				text-align: center;
 				width: 800px;
 			}
@@ -69,16 +62,23 @@
 				color: gray;
 			}
 
-			#navbar {
+			header {
 				position: fixed;
 				width: 100%;
 				background-color: white;
 				top: 0px;
 			}
+			main {
+				margin-top: 10em;
+				margin-bottom: 2em;
+			}
+			footer {
+				text-align: right;
+			}
 		</style>
 	</head>
 	<body>
-		<div id="navbar">
+		<header>
 			<hr>
 			<center>
 				<a href="https://eugenetedkim.github.io/home.html">
@@ -113,28 +113,15 @@
 				</span>
 			</div>
 			<hr>
-		</div>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-
-		<div>
+		</header>
+		<main>
 			<center>
-				
 				<h1>
 					About Me
-					<hr>
 				</h1>
-				<center>
-					<a>
-						<img id="profile_picture" class="border" src="https://eugenetedkim.github.io/document.JPG" target="_blank">
-					</a>
-				</center>
+				<a>
+					<img id="profile_picture" class="border" src="https://eugenetedkim.github.io/document.JPG" target="_blank">
+				</a>
 				<p>
 					At the age of 20, during the <a href="https://en.wikipedia.org/wiki/Financial_crisis_of_2007%E2%80%932008" target="_blank">financial crisis of 2007-2008</a>, I paused my university attendance to explore the workforce and myself. Despite the increasing unemployment rate, I started working full-time in logistics and at various companies within the <a href="https://en.wikipedia.org/wiki/Supply_chain" target="_blank">supply chain</a> over the next 7 years. From there, I got a good look at <a href="https://en.wikipedia.org/wiki/International_trade" target="_blank">international trade</a>, <a href="https://en.wikipedia.org/wiki/Commerce" target="_blank">commerce</a>, and myself.
 				</p>
@@ -145,13 +132,15 @@
 
 					I am currently studying Computer Science at <a href="https://en.wikipedia.org/wiki/California_State_University,_San_Bernardino" target="_blank">California State University, San Bernardino</a> and will graduate next summer. I am currently experimenting with web and mobile technologies to explore how it can improve our lives and to see how it can be used to express who I am, what I know, and how I can help contribute to our world. I aspire to become a great software engineer and very excited for the future.
 				</p>
-				<center>
-					<a>
-						<img id="station_picture" class="border" src="https://eugenetedkim.github.io/station.jpg" target="_blank">
-					</a>
-				</center>
+				<a>
+					<img id="station_picture" class="border" src="https://eugenetedkim.github.io/station.jpg" target="_blank">
+				</a>
 			</center>
-		</div>
+		</main>
+		<hr>
+		<footer>
+			Copyright 2019.
+		</footer>
 		<hr>
 	</body>
 </html>
