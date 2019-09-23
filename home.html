@@ -9,43 +9,58 @@
 		<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
 		<style>
 			#logo {
-				width: 300px;
+				width: 200px;
 				margin-top: 12px;
 			}
-
+			#name {
+				font-family: Sacramento, cursive;
+				font-size: 48px;
+				text-align: center;
+				margin: -2px 0px 12px 0px;
+			}
 			#links {
 				font-family: Quicksand;
-				font-size: 18px;
+				font-size: 14px;
 				text-align: center;
 			}
-
 			span + span {
 				margin-left: 35px;
 			}
-
+			main {
+				margin-top: 9em;
+				margin-bottom: 2em;
+				background: #CCFFFF;
+			}
+			header {
+				position: fixed;
+				width: 100%;
+				background-color: white;
+				top: 0px;
+				padding: 18px;
+				background: #CCFFFF;
+			}
+			footer {
+				text-align: right;
+				background: #CCFFFF;
+			}
 			#profile_picture {
-				width: 600px;
-				box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+				width: 400px;
 			}
 
 			#station_picture {
 				width: 600px;
-				box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 			}
-
 			.border {
 				border-color: gray;
 				border-width: 2px;
 				border-style: solid;
 
 			}
-
 			h1 {
 				font-family: Quicksand, cursive;
 				text-align: center;
 				width: 800px;
 			}
-
 			p {
 				font-family: Quicksand;
 				font-size: 18px;
@@ -53,37 +68,23 @@
 				text-align: justify;
 				width: 800px;
 			}
-
 			a {
 				color: #000;
 			}
-
 			a:hover {
 				color: gray;
-			}
-
-			header {
-				position: fixed;
-				width: 100%;
-				background-color: white;
-				top: 0px;
-			}
-			main {
-				margin-top: 10em;
-				margin-bottom: 2em;
-			}
-			footer {
-				text-align: right;
 			}
 		</style>
 	</head>
 	<body>
 		<header>
-			<hr>
 			<center>
+<!--
 				<a href="https://eugenetedkim.github.io/home.html">
-					<img id="logo" src="https://eugenetedkim.github.io/logo.jpg">
+					<img id="logo" src="file:///Users/eugenekim/Desktop/Sites/eugenetedkim.github.io/logo.jpg">
 				</a>
+-->
+			<h1 id="name">Eugene Kim</h1>
 			</center>
 
 			<div id="links" class="center uppercase">
@@ -112,13 +113,9 @@
 					<a href="mailto: eugeentedkim@gmail.com">Email</a>
 				</span>
 			</div>
-			<hr>
 		</header>
 		<main>
 			<center>
-				<h1>
-					About Me
-				</h1>
 				<a>
 					<img id="profile_picture" class="border" src="https://eugenetedkim.github.io/document.JPG" target="_blank">
 				</a>
