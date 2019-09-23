@@ -212,6 +212,35 @@
 						Advanced Operating System
 					</h2>
 					<iframe src="https://docs.google.com/document/d/e/2PACX-1vTM950nLVmknQD8IOL2-8B7M7wegDdzk7aPEliZglney7PEALg82DHUKQCeYkRHK1qE16rOOzpDZ-cv/pub?embedded=true"></iframe>
+					<pre>
+						<code class="language-pascal">
+							#include <iostream>
+							#include <cstdlib>
+							#include <string>
+							#include <fstream>
+							#include <vector>
+
+							using namespace std;
+
+							#ifndef PASSWORDFILE_H
+							#define PASSWORDFILE_H
+
+							class PasswordFile
+							{
+							public:
+							    PasswordFile(string fileName);// opens the file and reads the names/passwords in the vectors user and password.
+							    void addpw(string newUserName, string newPassWord); //this adds a new user/password to the vectors and writes the vectors to the file filename
+							    bool checkpw(string user, string passwd); // returns true if user exists and password matches
+							private:
+							    string filename; // the file that contains password information
+							    vector<string> users; // the list of usernames
+							    vector<string> passwords; // the list of passwords
+							    void synch(); // writes the user/password vectors to the password file
+							};
+
+							#endif
+						</code>
+					</pre>
 					<h2>
 						<hr>
 					</h2>
