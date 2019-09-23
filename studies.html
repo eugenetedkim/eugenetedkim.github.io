@@ -326,9 +326,46 @@
 							}
 						</code>
 					</pre>
-										<pre>
+					<pre>
 						<code class="language-pascal">
+							/*************************************************************
+							 * Programmer: Eugene Kim
+							 * Subject: Lab 1 - CSE 461 - Fall 2019
+							 * Professor: Owen Murphy
+							 * File Name: main.cpp
+							 * Description: This is a username and password
+							 * management program. It opens and reads from a file
+							 * containing usernames and passwords into vectors where
+							 * further manipulations can be made.
+							 * You can add new usernames and passwords or overwrite
+							 * existing passwords, check if usernames and passwords match,
+							 * and lastly synch back the changes to the original file.   
+							 *************************************************************/
 
+							#include <iostream>
+							#include <cstdlib>
+							#include <string>
+							#include <fstream>
+
+							#include "PasswordFile.h"
+
+							using namespace std;
+
+							int main() {
+							    PasswordFile passFile("password.txt");
+							    passFile.addpw("dbotting", "qwe321");
+							    passFile.addpw("egomez", "qwerty");
+							    passFile.addpw("tongyu", "liberty");    
+							    passFile.addpw("zemoudeh", "asdffdsa");
+							    passFile.addpw("Eugene", "mcconaughey");
+							    // write some lines to see if passwords match users
+							    bool match = passFile.checkpw("tongyu", "liberty");
+							    if (match) {
+							        cout << "The username and password match" << endl;
+							    } else {
+							        cout << "The username and password do not match" << endl;
+							    }
+							}
 						</code>
 					</pre>
 					<h2>
