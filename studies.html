@@ -241,6 +241,96 @@
 							#endif
 						</code>
 					</pre>
+					<pre>
+						<code class="language-pascal">
+							#include <iostream>
+							#include <cstdlib>
+							#include <string>
+							#include <fstream>
+							#include <vector>
+
+							#include "PasswordFile.h"
+
+							using namespace std;
+
+							PasswordFile::PasswordFile(string fileName) {
+							    string userName, passWord;
+							    int count1 = 0, count2 = 0;
+
+							    fstream inFile;
+							    inFile.open(fileName.c_str());
+							    inFile >> userName >> passWord;
+							    while (inFile.good())
+							    {
+								users.push_back(userName);
+								passwords.push_back(passWord);
+								inFile >> userName >> passWord;
+							    }
+							    inFile.close();
+							}
+
+							void PasswordFile::addpw(string newUserName, string newPassWord) {
+							    bool found = false;
+							    int i = 0;
+							    while (!found && i < users.size()) {
+							        if (users[i] == newUserName) {
+								    found = true;
+							            cout << newUserName << " already exists at index " << i << endl;
+								    cout << "Do you want to over-write " << newUserName << "'s password? (yes or no): ";
+							            string overWrite;
+							            cin >> overWrite;
+							            if (overWrite == "yes") {
+							                passwords[i] = newPassWord;
+							            } else if (overWrite == "no") {
+							                cout << "Password for " << newUserName << " has not been over-written" << endl;
+							            }
+							        } else {
+							            i++;
+							        }
+							    } 
+							    
+							    if (!found) {
+							        users.push_back(newUserName);
+							        passwords.push_back(newPassWord);
+							    }
+
+							    synch();
+							}
+
+							bool PasswordFile::checkpw(string user, string passwd) {
+							    bool match = false;
+							    int i = 0;
+							    while (!match && i < users.size()) {
+							        if (users[i] == user) {
+							            if (passwords[i] == passwd) {
+							                match = true;
+							                return match;
+							            }
+							        }
+							        i++;
+							    }
+							    return match;
+							}
+
+							void PasswordFile::synch() {
+							    string fileName2 = "password.txt";
+							    fstream outFile;
+							    outFile.open(fileName2.c_str());
+
+							    for (int i = 0; i < users.size(); i++)
+							    {   
+							        outFile << users[i] << " " << passwords[i] << endl;
+							    }
+
+							    outFile.close();
+							}
+						</code>
+					</pre>
+										<pre>
+						<code class="language-pascal">
+
+						</code>
+					</pre>
 					<h2>
 						<hr>
 					</h2>
